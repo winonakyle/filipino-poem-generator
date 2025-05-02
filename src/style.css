@@ -1,0 +1,78 @@
+body {
+
+  background: linear-gradient(89deg, rgb(253, 220, 155) 26.2%, rgb(255, 215, 165) 48.5%);
+  font-family: "Bellota";
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 650px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "McLaren";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  color: #283F3F;
+}
+
+form {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #ffe8c2;
+  box-shadow: 0px 20px 60px rgba(60, 50, 100, 0.08);
+  border-radius: 16px;
+  display: flex;
+}
+
+.input-topic {
+  font-family: "Bellota";
+  font-size: 16px;
+  line-height: 1.5;
+  width: 79%;
+  padding: 16px;
+  border: 1px solid rgba(134, 121, 66, 0.35);
+  border-radius: 16px;
+  background-color: #fff1dd;
+  color: #283F3F;
+}
+
+.input-submit {
+  font-family: "Bellota";
+  font-size: 16px;
+  margin-left: 8px;
+  line-height: 1.5;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background-color: #325252;
+  color: #fff1dd;
+}
+
+.generated-poem {
+  font-size: 18px;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-left: 3px solid #283F3F;
+  background-color: #ffe8c2;
+  box-shadow: 0px 20px 60px rgba(60, 50, 100, 0.08);
+  color: #283F3F;
+}
+
+a {
+  color: #A95F3A;
+}
+
+footer {
+  font-family: "McLaren";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+  color: #283F3F;
+}
