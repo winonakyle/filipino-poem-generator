@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=McLaren&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <title>AI Filipino Poems Generator</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
 
   <main>
     <form id="poem-generator-form">
-      <input type="text" placeholder="Enter the topic of the Filipino poem" autofocus required autocomplete="off" class="input-topic" />
+      <input type="text" placeholder="Enter the topic of the Filipino poem" autofocus required autocomplete="off" class="input-topic" id="user-instructions" />
       <input type="submit" class="input-submit" />
     </form>
       <div class="generated-poem" id="generated-poem"></div>

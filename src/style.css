@@ -65,6 +65,10 @@ form {
   color: #283F3F;
 }
 
+.generated-poem em {
+  color: #A95F3A;
+}
+
 a {
   color: #A95F3A;
 }
