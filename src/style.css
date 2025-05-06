@@ -4,7 +4,7 @@ body {
   font-family: "Bellota";
 }
 
-.container {
+.body-container {
   margin: 120px auto;
   max-width: 650px;
 }
@@ -23,17 +23,21 @@ h1 {
 }
 
 form {
-  padding: 30px;
+  display: flex;
+}
+
+.form-container {
+  padding: 25px 24px 20px 25px;
   margin-bottom: 30px;
   background-color: #ffe8c2;
   box-shadow: 0px 20px 60px rgba(60, 50, 100, 0.08);
   border-radius: 16px;
-  display: flex;
 }
 
 .input-topic {
   font-family: "Bellota";
   font-size: 16px;
+  margin-bottom: 2px;
   line-height: 1.5;
   width: 79%;
   padding: 16px;
@@ -47,12 +51,21 @@ form {
   font-family: "Bellota";
   font-size: 16px;
   margin-left: 8px;
+  margin-bottom: 2px;
   line-height: 1.5;
   padding: 16px;
   border: none;
   border-radius: 16px;
   background-color: #325252;
   color: #fff1dd;
+}
+
+small {
+  margin-left: 10px;
+  font-style: italic;
+  font-size: 13px;
+  color: #A95F3A;
+  opacity: 0.9;
 }
 
 .generated-poem {
@@ -63,6 +76,10 @@ form {
   background-color: #ffe8c2;
   box-shadow: 0px 20px 60px rgba(60, 50, 100, 0.08);
   color: #283F3F;
+}
+
+.hidden {
+  display: none;
 }
 
 .generated-poem em {
@@ -79,4 +96,20 @@ footer {
   text-align: center;
   padding: 10px;
   color: #283F3F;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

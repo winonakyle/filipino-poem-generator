@@ -12,17 +12,20 @@
   <title>AI Filipino Poems Generator</title>
 </head>
 <body>
-  <div class="container">
+  <div class="body-container">
   <header>
     <h1>AI Filipino Poem Generator</h1>
   </header>
 
   <main>
+    <div class="form-container">
     <form id="poem-generator-form">
-      <input type="text" placeholder="Enter the topic of the Filipino poem" autofocus required autocomplete="off" class="input-topic" id="user-instructions" />
+      <input type="text" placeholder="Enter the topic of a Filipino poem" autofocus required autocomplete="off" class="input-topic" id="user-instructions" />
       <input type="submit" class="input-submit" />
     </form>
-      <div class="generated-poem" id="generated-poem"></div>
+    <small>i.e: ligaya, kubo, bulalo</small>
+    </div>
+      <div class="generated-poem hidden" id="generated-poem"></div>
 
   </main>
 

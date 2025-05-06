@@ -19,6 +19,10 @@ let context = `You are an AI Assistant that is knowledgeable about Filipino, spe
 let apiKey = "8e3acea414f74ff0de5f0fboa8fbt362";
 let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let generatedPoemElement = document.querySelector("#generated-poem");
+generatedPoemElement.classList.remove("hidden");
+generatedPoemElement.innerHTML = `<div class="generating">⏳ Generating a poem about ${userInstructions.value}</div>`;
+
 console.log("Generating poem");
 console.log(`Prompt: ${prompt}`);
 console.log(`Context: ${context}`);
